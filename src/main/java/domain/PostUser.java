@@ -7,13 +7,12 @@ import java.math.BigInteger;
 @Entity
 public class PostUser {
 
-    @Id @GeneratedValue
-    private BigInteger id; //id 필요하대서
-
+    @Id
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn (name = "USER_ID")
     private User user;
 
+    @Id
     @ManyToOne
     @JoinColumn (name = "POST_ID")
     private Post post;
