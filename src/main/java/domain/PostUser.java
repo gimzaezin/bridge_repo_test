@@ -16,5 +16,4 @@ public class PostUser {
     @ManyToOne
     @JoinColumn (name = "POST_ID")
     private Post post;
-
 }

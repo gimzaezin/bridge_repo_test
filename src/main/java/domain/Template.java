@@ -11,7 +11,7 @@ public class Template {
 
     @Id @GeneratedValue
     @Column(name = "TEMPLATE_ID")
-    private BigInteger id;
+    private Long id;
 
     private String content;
 

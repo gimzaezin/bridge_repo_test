@@ -7,7 +7,7 @@ import java.math.BigInteger;
 @Entity
 public class Validate {
     @Id @GeneratedValue
-    private BigInteger id;
+    private Long id;
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "TEMPLATE_ID")

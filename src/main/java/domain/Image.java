@@ -7,7 +7,7 @@ import java.math.BigInteger;
 @Entity
 public class Image {
     @Id @GeneratedValue
-    private BigInteger id;
+    private Long id;
 
     private String url;     //경로
     private String name;

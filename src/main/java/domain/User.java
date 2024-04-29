@@ -11,7 +11,7 @@ import java.util.List;
 public class User {
     @Id @GeneratedValue
     @Column(name = "USER_ID")
-    private BigInteger id;
+    private Long id;
 
     private String loginId;
 
@@ -29,7 +29,7 @@ public class User {
 
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "GENDER_ID")
-    private Gender genderName;
+    private Gender gender;
 
     @OneToMany(mappedBy = "User")
     private List<Post> posts = new ArrayList<>();

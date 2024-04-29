@@ -12,7 +12,7 @@ public class Hashtag {
 
     @Id @GeneratedValue
     @Column(name = "HASHTAG_ID")
-    private BigInteger id;
+    private Long id;
 
     private String hashtagName;
 

@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
 @Entity
 public class Comment {
     @Id @GeneratedValue
-    private BigInteger id;
+    private Long id;
 
     private String content;
     private LocalDateTime createdAt;

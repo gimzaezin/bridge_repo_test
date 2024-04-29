@@ -12,7 +12,7 @@ public class Post {
 
     @Id @GeneratedValue
     @Column(name = "POST_ID")
-    private BigInteger id;
+    private Long id;
 
     private String title;
 

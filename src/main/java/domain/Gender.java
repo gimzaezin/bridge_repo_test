@@ -10,9 +10,9 @@ import java.util.List;
 public class Gender {
     @Id @GeneratedValue
     @Column(name = "GENDER_ID")
-    private BigInteger id;
+    private Long id;
     private String genderName;
 
-    @OneToMany(mappedBy = "Gender")
+    @OneToMany(mappedBy = "gender")
     private List<User> users = new ArrayList<User>();
 }
